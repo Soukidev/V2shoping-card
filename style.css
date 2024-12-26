@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h2, h5 {
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  .gradient-custom {
+    background: linear-gradient(135deg, #1063b5, #9fff63);
+    height: 100%;
+    padding: 50px 0;
+  }
+  
+  .card {
+    border-radius: 10px;
+  }
+  
+  .card-header {
+    background-color: #343a40;
+    color: #fff;
+  }
+  
+  .card-body {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Cart Item Styling */
+  .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cart-item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .cart-item h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .cart-item p {
+    font-size: 14px;
+    color: #6c757d;
+  }
+  
+  .cart-item .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #286ca7;
+  }
+  
+  .cart-item .quantity {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .cart-item .plus, .cart-item .minus, .cart-item .delete, .cart-item .heart {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .cart-item .plus:hover, .cart-item .minus:hover, .cart-item .delete:hover, .cart-item .heart:hover {
+    color: #0056b3;
+  }
+  
+  /* Summary Section */
+  #summary-details {
+    margin-top: 20px;
+  }
+  
+  #summary-details li {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+  
+  #summary-details .fw-bold {
+    font-weight: bold;
+  }
+  
+  .total-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #28a745;
+  }
+  
+  #checkout-btn {
+    width: 100%;
+    font-size: 18px;
+    padding: 12px;
+  }
+  
+  #checkout-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Heart Button (Liked) */
+  .heart.liked i {
+    color: red;
+  }
+  

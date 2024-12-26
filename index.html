@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="h-100 gradient-custom">
+    <div class="container py-5">
+      <h2 class="text-center text-white mb-4">Your Shopping Cart</h2>
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-8">
+          <div class="card mb-4">
+            <div class="card-header py-3">
+              <h5 class="mb-0">Cart Items</h5>
+            </div>
+            <div class="card-body">
+              <!-- Item 1 -->
+              <div class="row mb-4 cart-item">
+                <div class="col-md-3">
+                  <img src="https://www.mrgeek.ma/wp-content/uploads/2022/11/MACBOOK-AIR-M2-2-SG.jpg" class="img-fluid rounded-3" alt="Product 1">
+                </div>
+                <div class="col-md-5">
+                  <h5>MacBook Air</h5>
+                  <p class="text-muted">High-performance laptop with Apple M3 chip.</p>
+                </div>
+                <div class="col-md-2 text-center">
+                  <span class="quantity">1</span>
+                </div>
+                <div class="col-md-2 text-center">
+                  <h5 class="price">$4900.99</h5>
+                </div>
+                <div class="col-md-1">
+                  <button class="btn btn-link plus">+</button>
+                  <button class="btn btn-link minus">-</button>
+                </div>
+                <div class="col-md-1">
+                  <button class="btn btn-link delete"><i class="fas fa-trash"></i></button>
+                  <button class="btn btn-link heart"><i class="fas fa-heart"></i></button>
+                </div>
+              </div>
+              <hr>
+              <!-- Item 2 -->
+              <div class="row mb-4 cart-item">
+                <div class="col-md-3">
+                  <img src="https://technoinfo.ma/wp-content/uploads/2024/05/1-9.jpg" class="img-fluid rounded-3" alt="Product 2">
+                </div>
+                <div class="col-md-5">
+                  <h5>iPad Pro</h5>
+                  <p class="text-muted">Powerful tablet with M4 chip.</p>
+                </div>
+                <div class="col-md-2 text-center">
+                  <span class="quantity">1</span>
+                </div>
+                <div class="col-md-2 text-center">
+                  <h5 class="price">$2900.99</h5>
+                </div>
+                <div class="col-md-1">
+                  <button class="btn btn-link plus">+</button>
+                  <button class="btn btn-link minus">-</button>
+                </div>
+                <div class="col-md-1">
+                  <button class="btn btn-link delete"><i class="fas fa-trash"></i></button>
+                  <button class="btn btn-link heart"><i class="fas fa-heart"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Summary Section -->
+          <div class="card mb-4">
+            <div class="card-header py-3">
+              <h5 class="mb-0">Summary</h5>
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush" id="summary-details">
+                <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                  Subtotal
+                  <span id="subtotal">$0.00</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                  Shipping
+                  <span id="shipping">$5.00</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center px-0 fw-bold">
+                  Total
+                  <span class="total-price">$0.00</span>
+                </li>
+              </ul>
+              <button class="btn btn-primary btn-lg btn-block mt-3" id="checkout-btn">Proceed to Checkout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
